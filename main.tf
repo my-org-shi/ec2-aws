@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-04f77c9cd94746b09"  # Microsoft Windows Server 2025
-  instance_type = "t3.micro"
+  ami           = "ami-0c7af5fe939f2677f" 
+  instance_type = "t2.micro"
 
   tags = {
     Name = "GitHub-CI-CD-VM"
