@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
   ami           = "ami-0c7af5fe939f2677f"  # RHEL 9 AMI (Ensure it's valid for us-east-1)
   instance_type = "t2.micro"  # Nitro-based instance for UEFI compatibility
 
-  key_name      = "my-ssh-key"  # Replace with your existing key pair name
+  key_name      = "my-ssh-key1"  # Replace with your existing key pair name
   subnet_id     = aws_subnet.my_subnet.id  # Reference to created subnet
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
